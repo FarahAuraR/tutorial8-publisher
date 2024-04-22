@@ -12,3 +12,8 @@ URL "amqp://guest:guest@localhost:5672" digunakan di kedua program subscriber da
 ![Commit 4](assets/images/commit4.png)
 ###### what was happening?
 Ketika menjalankan cargo run pada subscriber lalu menjalankan cargo run pada publisher, dapat terlihat bahwa publisher mengirim 5 event ke message broker yang kemudian di consume oleh subscriber.
+
+###### Monitoring chart based on publisher
+![Commit 5](assets/images/commit5.png)
+###### how the spike got to do with running the publisher?
+Spike pada grafik menunjukkan tingkat pesan yang mengukur seberapa banyak pesan yang dikirimkan ke saluran dalam interval waktu. Karena publisher mengirim beberapa pesan ke message broker, tingkat pesan meningkat, sehingga menyebabkan spike pada grafik.
