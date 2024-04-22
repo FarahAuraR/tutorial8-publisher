@@ -7,3 +7,8 @@ URL "amqp://guest:guest@localhost:5672" digunakan di kedua program subscriber da
 
 ###### Running RabbitMQ as message broker
 ![Commit 3](assets/images/commit3.png)
+
+###### Sending and processing event
+![Commit 4](assets/images/commit4.png)
+###### what was happening?
+Ketika menjalankan cargo run pada subscriber lalu menjalankan cargo run pada publisher, dapat terlihat bahwa publisher mengirim 5 event ke message broker yang kemudian di consume oleh subscriber.
