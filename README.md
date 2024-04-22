@@ -4,3 +4,6 @@ Program publisher akan mengirimkan lima data ke message brocker dalam satu kali 
 
 ###### 2. The url of: “amqp://guest:guest@localhost:5672” is the same as in the subscriber program, what does it mean?
 URL "amqp://guest:guest@localhost:5672" digunakan di kedua program subscriber dan publisher yang berarti keduanya terhubung ke server AMQP dengan kredensial yang sama (nama pengguna dan sandi "guest"), serta server berjalan pada localhost dengan port 5672.
+
+###### Running RabbitMQ as message broker
+![Commit 3](assets/images/commit3.png)
